@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FormularioComponent } from './formulario/formulario.component';
+import { PersonaComponent } from './persona/persona.component';
 
 const routes: Routes = [
-  { path: "formulario", component: FormularioComponent },
-  { path: "**", redirectTo: "/formulario", pathMatch: "full" },
-
+  { path: "persona", component: PersonaComponent },
+  { path: "personita", component: PersonaComponent },
+  { path: "**", redirectTo: "/persona", pathMatch: "full" },
 ];
 
 @NgModule({

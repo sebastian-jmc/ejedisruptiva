@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "disruptivo": {
+    "disp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/disruptivo",
+            "outputPath": "dist/disp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "disruptivo:build:production"
+              "browserTarget": "disp:build:production"
             },
             "development": {
-              "browserTarget": "disruptivo:build:development"
+              "browserTarget": "disp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "disruptivo:build"
+            "browserTarget": "disp:build"
           }
         },
         "test": {
@@ -98,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": "5e616eb4-4ba2-4569-822d-592141c16c5f"
+    "analytics": "811a4fe8-63a2-4491-b947-a66a26025d79"
   }
 }
