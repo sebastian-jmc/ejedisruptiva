@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="contenedor">
+    <form [formGroup]="persona" class="formulario-vertical">
+      <mat-form-field>
+        <input
+          matInput
+          formControlName="nombre"
+          type="text"
+          placeholder="Ingrese su nombre"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          formControlName="apellido"
+          type="text"
+          placeholder="Ingrese su apellido"
+        />
+      </mat-form-field>
+
+
+      <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="fecha_nacimiento">
+        <mat-hint>DD/MM/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="submit()">
+        Enviar
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- <p>{{ persona.value.nombre }}</p> -->
